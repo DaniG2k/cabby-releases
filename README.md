@@ -58,4 +58,4 @@ Cabby is derived from AnyCable. The licenses of the Rust crates in the binary ar
 
 ## Source code
 
-The source code will be published later.
+https://github.com/DaniG2k/cabby
