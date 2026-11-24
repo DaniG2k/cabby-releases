@@ -21,7 +21,7 @@ https://github.com/DaniG2k/cabby-releases/releases, then:
 
 ```sh
 shasum -a 256 -c SHA256SUMS --ignore-missing
-tar -xzf cabby-0.1.0-x86_64-unknown-linux-gnu.tar.gz
+tar -xzf cabby-0.2.0-x86_64-unknown-linux-gnu.tar.gz
 ./cabby --version
 ./cabby --norpc --public --broadcast_adapter=http
 ```
@@ -32,11 +32,11 @@ The default broadcast adapters are `http,redis`, so a standalone binary needs
 ### Docker
 
 ```sh
-docker run --rm -p 8080:8080 -p 8090:8090 ghcr.io/danig2k/cabby:0.1.0 --norpc --public
+docker run --rm -p 8080:8080 -p 8090:8090 ghcr.io/danig2k/cabby:0.2.0 --norpc --public
 ```
 
 The image listens on `0.0.0.0` and uses the HTTP broadcast adapter, so it runs without Redis.
-Configure it with flags or `ANYCABLE_*` environment variables (`-e`).
+Configure it with flags or `CABBY_*` environment variables (`-e`); `ANYCABLE_*` names still work.
 
 ### Try it
 
